@@ -1,15 +1,15 @@
-import React from "react";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dev fixed-top">
       <div className="container">
-        <a className="navbar-brand" href="#">
-          Dev Em Crise
-        </a>
+        <NavLink className="navbar-brand" to="/">
+          Dev em Crise
+        </NavLink>
 
         <button
-          className="nav-toggler"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
@@ -20,29 +20,19 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Home
-              </a>
+              <NavLink className="nav-link" to="/">Home</NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Diário
-              </a>
+              <NavLink className="nav-link" to="/diario">Diário</NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Microvitórias
-              </a>
+              <NavLink className="nav-link" to="/microvitorias">Microvitórias</NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Projetos
-              </a>
+              <NavLink className="nav-link" to="/projetos">Projetos</NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Sobre
-              </a>
+              <NavLink className="nav-link" to="/sobre">Sobre</NavLink>
             </li>
           </ul>
         </div>

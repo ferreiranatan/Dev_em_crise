@@ -47,22 +47,80 @@ body {
 
 
 .navbar-dev {
-  background-color: #0f0f0f;
+  background-color: rgba(15, 15, 15, 0.95);
+  backdrop-filter: blur(6px);
   border-bottom: 1px solid var(--border-color);
+  padding: 0.8rem 0;
 }
 
 .navbar-dev .navbar-brand {
   font-weight: 600;
+  font-size: 1rem;
   letter-spacing: 0.5px;
   color: var(--text-main);
 }
 
 .navbar-dev .nav-link {
-  color: #b0b0b0;
-  font-size: 0.95rem;
-  transition: 0.2s;
+  color: #9a9a9a;
+  font-size: 0.9rem;
+  margin-left: 20px;
+  transition: 0.2s ease;
 }
 
 .navbar-dev .nav-link:hover {
   color: var(--text-main);
+}
+
+.navbar-dev .nav-link.active {
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+.footer-dev {
+  background-color: #0a0a0a;
+  border-top: 1px solid var(--border-color);
+  color: #b0b0b0;
+  font-size: 0.9rem;
+}
+
+.footer-dev h5 {
+  color: var(--text-main);
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.footer-dev a {
+  display: block;
+  color: #9a9a9a;
+  text-decoration: none;
+  margin-bottom: 8px;
+  transition: 0.2s;
+}
+
+.footer-dev a:hover {
+  color: var(--text-main);
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--border-color);
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.hero-section {
+  min-height: 70vh;
+}
+
+.hero-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text-main);
+}
+
+.hero-subtext {
+  font-size: 1.1rem;
+  color: #9a9a9a;
+  max-width: 600px;
+  margin: 0 auto;
 }
