@@ -1,0 +1,68 @@
+
+
+:root {
+  --bg-main: #0f0f0f;
+
+  --bg-card: #1a1a1a;
+
+  --border-color: #2a2a2a;
+
+  --text-main: #e0e0e0;
+
+  --crise-red: #8b0000;
+
+  --microvitoria-green: #1f6f3e;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+}
+
+.card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+}
+
+.btn-crise {
+  background-color: var(--crise-red);
+  color: white;
+  border: none;
+}
+
+.btn-crise:hover {
+  opacity: 0.9;
+}
+
+.btn-microvitoria {
+  background-color: var(--microvitoria-green);
+  color: white;
+  border: none;
+}
+
+.btn-microvitoria:hover {
+  opacity: 0.9;
+}
+
+
+.navbar-dev {
+  background-color: #0f0f0f;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.navbar-dev .navbar-brand {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: var(--text-main);
+}
+
+.navbar-dev .nav-link {
+  color: #b0b0b0;
+  font-size: 0.95rem;
+  transition: 0.2s;
+}
+
+.navbar-dev .nav-link:hover {
+  color: var(--text-main);
+}
