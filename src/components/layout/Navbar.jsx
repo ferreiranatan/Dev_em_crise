@@ -26,7 +26,7 @@ function Navbar() {
               <NavLink className="nav-link" to="/diario">Diário</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/microvitorias">Microvitórias</NavLink>
+              <NavLink className="nav-link" to="/analytics">Analytics</NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/projetos">Projetos</NavLink>

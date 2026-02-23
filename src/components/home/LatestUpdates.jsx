@@ -1,4 +1,4 @@
-export default function LatestEntriesSection() {
+export default function LatestUpdates() {
   return (
    <section className="entries-section">
   <div className="entries-header">
