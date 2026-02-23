@@ -1,15 +1,13 @@
-<Container>
-    <HeroSection />
-    
-    <div className="section-spacing">
-        <UltimaCriseCard /> 
-    </div>
+import HeroSection from "../components/home/HeroSection";
+import LatestEntriesSection from "../components/home/LatestEntriesSection";
 
-    <div className="section-spacing text-center">
-        <PersistenciaIndicator />
-    </div>
+function Home(){
+    return (
+        <>
+            <HeroSection />
+            <LatestEntriesSection />
+        </>
+    )
+}
 
-    <div className="section-spacing">
-        <CrisisChart />
-    </div>
-</Container>
+export default Home;
