@@ -9,7 +9,9 @@ export default function Layout() {
       <main style={{paddingTop:"80px"}}>
         <Outlet />
       </main>
+    
       <Footer />
+     
     </>
   )
 }

@@ -1,41 +1,32 @@
+import { Link } from "react-router-dom";
+import DiaryCard from "../diario/DiaryCard";
+import diaryData from "../../mocks/projectData";
+
 export default function LatestUpdates() {
+  const latest = diaryData.slice(0, 3);
+
   return (
-   <section className="entries-section">
-  <div className="entries-header">
-    <p className="section-label">Diário</p>
-    <h2>Últimos registros</h2>
-  </div>
+    <section className="px-6 py-20 max-w-6xl mx-auto">
+      
+      <h2 className="text-3xl font-semibold text-center mb-14">
+        Últimos registros
+      </h2>
 
-  <div className="entries-grid">
+      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        {latest.map((entry) => (
+          <DiaryCard key={entry.id} {...entry} />
+        ))}
+      </div>
 
-    <div className="entry-card">
-      <span className="entry-date">12 Fev 2026</span>
-      <h3>Quando o código trava, eu também travo</h3>
-      <p>
-        Hoje eu percebi que não era bug. Era exaustão mental disfarçada de erro técnico.
-      </p>
-      <a href="/diario/1">Ler registro</a>
-    </div>
+      <div className="text-center mt-14">
+        <Link
+          to="/diario"
+          className="text-neutral-400 hover:text-white transition"
+        >
+          Ver todos →
+        </Link>
+      </div>
 
-    <div className="entry-card">
-      <span className="entry-date">08 Fev 2026</span>
-      <h3>Refatorando a mim mesmo</h3>
-      <p>
-        Às vezes melhorar o código é mais fácil do que melhorar a própria disciplina.
-      </p>
-      <a href="/diario/2">Ler registro</a>
-    </div>
-
-    <div className="entry-card">
-      <span className="entry-date">02 Fev 2026</span>
-      <h3>Microvitória invisível</h3>
-      <p>
-        Ninguém viu. Não postei. Mas hoje eu consegui resolver algo que me travava há dias.
-      </p>
-      <a href="/diario/3">Ler registro</a>
-    </div>
-
-  </div>
-</section>
-  )
+    </section>
+  );
 }
